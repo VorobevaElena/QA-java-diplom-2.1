@@ -16,7 +16,7 @@ public class GetOrdersTest {
     private final OrderClient orderClient = new OrderClient();
 
     @Test
-    @DisplayName("олучение заказа пользователем без авторизации")
+    @DisplayName("Получение заказа пользователем без авторизации")
     public void getOrderWithoutAuthorizationUser(){
         ValidatableResponse allOrders = orderClient.getAllOrdersLogoutUser();
         allOrders
